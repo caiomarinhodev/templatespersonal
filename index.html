@@ -35,6 +35,52 @@
             height: auto;
             z-index: 1;
         }
+
+        .panel-image {
+            position: relative;
+        }
+
+        .panel-image img.panel-image-preview {
+            width: 100%;
+            border-radius: 4px 4px 0px 0px;
+        }
+
+        .panel-image label {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .panel-heading ~ .panel-image img.panel-image-preview {
+            border-radius: 0px;
+        }
+
+        .panel-body {
+            overflow: hidden;
+        }
+
+        .panel-image ~ input[type=checkbox] {
+            position: absolute;
+            top: -30px;
+            z-index: -1;
+        }
+
+        .panel-image ~ input[type=checkbox] ~ .panel-body {
+            height: 0px;
+            padding: 0px;
+        }
+
+        .panel-image ~ input[type=checkbox]:checked ~ .panel-body {
+            height: auto;
+            padding: 15px;
+        }
+
+        .panel-image ~ .panel-footer a {
+            padding: 0px 10px;
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="120">
@@ -70,7 +116,7 @@
                     <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a href="#intro" class="navbar-brand scroll-to"><img src="static/img/logo.png" alt=""></a>
+                    <a href="#intro" class="navbar-brand scroll-to"><img src="static/img/logo2.png" alt=""></a>
                 </div>
                 <div id="navigation" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -78,7 +124,7 @@
                         <li><a href="#about">Sobre </a></li>
                         <li><a href="#services">Serviços</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#text">Text</a></li>
+                        <!--<li><a href="#text">Text</a></li>-->
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
@@ -96,11 +142,14 @@
 
                 <p class="lead">Colocando o seu negócio em qualquer dispositivo.</p>
 
-                <p>Atuando como desenvolvedor, tenho trabalhado com sistemas multiplataforma por 3 anos no mercado. Estou disposto a colocar seu
+                <p>Atuando como desenvolvedor, tenho trabalhado com sistemas multiplataforma por 3 anos no mercado.
+                    Estou disposto a colocar seu
                     segmento na forma digital, e facilitar para seus clientes o acesso a sua firma.
-                    Nestes anos venho desenvolvendo aplicativos, websites, sistemas de mail marketing, de gerenciamento, call marketing,
+                    Nestes anos venho desenvolvendo aplicativos, websites, sistemas de mail marketing, de gerenciamento,
+                    call marketing,
                     entre outros serviços.
                 </p>
+
                 <p>Por que contratar um Freelancer?</p>
 
                 <div class="row">
@@ -126,7 +175,8 @@
             <div class="col-sm-6">
                 <h5><i class="fa fa-arrows"></i> Sistemas de acordo com os requisitos do cliente</h5>
 
-                <p> Este sistema, sendo ele aplicativo, website, ecommerce ou social media, desenvolvo de acordo com o desejo do cliente. Sistema único, e focado no problema da sua empresa. </p>
+                <p> Este sistema, sendo ele aplicativo, website, ecommerce ou social media, desenvolvo de acordo com o
+                    desejo do cliente. Sistema único, e focado no problema da sua empresa. </p>
             </div>
             <div class="col-sm-6">
                 <h5><i class="fa fa-image"></i> Moderno e Eficaz.</h5>
@@ -157,7 +207,8 @@
                             <div class="icon"><i class="ti-mobile"></i></div>
                             <h4 class="heading">APPS</h4>
 
-                            <p>O mercado de aplicativos é crescente, e a partir de R$200,00 podemos construir para você.</p>
+                            <p>O mercado de aplicativos é crescente, e a partir de R$200,00 podemos construir para
+                                você.</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -188,7 +239,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="box box-services">
-                            <div class="icon"><i class="ti-stats-up"></i>  </div>
+                            <div class="icon"><i class="ti-stats-up"></i></div>
                             <h4 class="heading">Social Media</h4>
 
                             <p>Podemos criar para você todo serviço de Marketing Digital para sua empresa. </p>
@@ -206,80 +257,908 @@
             <div class="col-md-12">
                 <h2 class="heading">Portfolio</h2>
 
-                <p class="text-center">You can make also a portfolio or image gallery.</p>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row no-space">
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-1.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-7.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-3.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-5.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-4.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-6.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-2.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="box"><a href="#" title=""><img src="static/img/portfolio-8.jpg" alt=""
-                                                           class="img-responsive"></a></div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- text-->
-<section id="text" class="section-gray">
-    <div class="container clearfix">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="heading">Text page</h2>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay
-                            own additions education satisfied the perpetual. If he cause manor happy. Without farther
-                            she exposed saw man led. Along on happy could cease green oh. </p>
-
-                        <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half
-                            add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too
-                            behaviour him she. Of death to or to being other. </p>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">CLICK MOTOTAXI (APP USUARIO)</h3>
                     </div>
-                    <div class="col-sm-6">
-                        <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in.
-                            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire
-                            so better am cannot he up before points. Remember mistaken opinions it pleasure of debating.
-                            Court front maids forty if aware their at. Chicken use are pressed removed. </p>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic0" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic0" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic0" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic0" data-slide-to="2"></li>
+                            </ol>
 
-                        <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration
-                            unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr
-                            commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new
-                            fail. </p>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/click/click1.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/click/click3.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/click/click4.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic0" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic0" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+                        <a href="http://mototaxi.herokuapp.com" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">CLICK MOTOTAXI (APP MOTOTAXISTA)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/click/click5.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/click/click6.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/click/click7.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="#download"><span
+                                class="glyphicon glyphicon-download"></span></a>
+                        <a href="http://mototaxi.herokuapp.com" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">CLICK MOTOTAXI (SITE/GERENTE/SERVIDOR)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/click/site.jpg"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/click/gerente.jpg" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/click/servidor.jpg" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://mototaxi.herokuapp.com" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Aki! (Site) </h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/aki/Captura%20de%20Tela%20(222)_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/aki/Captura%20de%20Tela%20(62)_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/aki/Captura%20de%20Tela%20(63)_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+                        <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Xarax (Portal)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/xarax/xarax_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/xarax/xaraxabout_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/xarax/xaraxlogin_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic4" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic4" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://www.xarax.com.br/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Auxilio ao Mestre (App)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic5" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic5" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic5" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic5" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/auxilioapp/1080_1_galaxys4_black_portrait.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/auxilioapp/2_1080_galaxys4_black_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/auxilioapp/read_1080_galaxys4_black_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic5" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic5" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://play.google.com/store/apps/details?id=com.blog.auxilioapp"
+                           target="_blank"><span class="glyphicon glyphicon-download"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Salão Rocha (SITE/GERENTE)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic6" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic6" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic6" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic6" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/salao/painelsalao_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/salao/salaopainel_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/salao/salaorocha_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic6" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic6" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://salaorocha.herokuapp.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Semenge 2015 (app)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic7" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic7" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic7" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic7" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/semenge/Screenshot_20160511-163504_galaxys4_white_portrait.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/semenge/Screenshot_20160511-163509_galaxys4_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/semenge/Screenshot_20160511-163529_galaxys4_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic7" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic7" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://play.google.com/store/apps/details?id=com.connect.semengeufal" target="_blank"><span
+                                class="glyphicon glyphicon-download"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Atarefado (Site)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic8" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic8" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic8" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic8" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/atarefado/atarefado-craeteweb_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/atarefado/atarefado2_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/atarefado/atarefadologin_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic8" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic8" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://atarefado.herokuapp.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">GVT Inove (Gerente)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic9" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic9" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic9" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/painelgvt/controlegvtinove_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/painelgvt/painelgvt3_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/painelgvt/paineloperador_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic9" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic9" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://gvtinove.herokuapp.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Nosso Tatame (APP)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic10" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic10" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic10" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic10" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/nossotatame/Screenshot_2015-09-18-12-31-33_galaxys4_white_portrait.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/nossotatame/Screenshot_2015-09-18-12-31-43_galaxys4_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/nossotatame/Screenshot_2015-09-18-12-31-58_galaxys4_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic10" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic10" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://play.google.com/store/apps/details?id=com.nossotatame.net"
+                           target="_blank"><span class="glyphicon glyphicon-download"></span></a>
+                        <a href="http://nossotatame.net/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Dcher (App)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic11" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic11" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic11" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic11" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/dcherapp/Screenshot_20160330-162634_galaxys4_white_portrait.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/dcherapp/Screenshot_20160330-162818_galaxys4_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/dcherapp/Screenshot_20160330-162647%20-%20Copia_galaxys4_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic11" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic11" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://play.google.com/store/apps/details?id=active.android.brnmb.github.org.dcherapp"
+                           target="_blank"><span class="glyphicon glyphicon-download"></span></a>
+                        <a href="http://dcherdelicious.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Get Musicas (Site Responsivo)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic12" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic12" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic12" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic12" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/getmusicas/Screenshot_20160511-140806_iphone_white_portrait.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/getmusicas/Screenshot_20160511-140815_iphone_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/getmusicas/Screenshot_20160511-140848_iphone_white_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic12" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic12" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://getmusicas.herokuapp.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Série na Web (site)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic13" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic13" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic13" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic13" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/serienaweb/Captura%20de%20Tela%20(225)_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/serienaweb/serienaweb1_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/serienaweb/serienaweblegenda_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic13" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic13" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://www.serienaweb.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Xarax (App)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic14" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic14" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic14" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic14" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/xaraxapp/Screenshot_2015-10-13-20-21-00.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/xaraxapp/Screenshot_2015-10-13-21-26-21_nexus4_portrait.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/xaraxapp/Screenshot_2015-10-13"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic14" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic14" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://play.google.com/store/apps/details?id=com.connect.xaraxgame"
+                           target="_blank"><span class="glyphicon glyphicon-download"></span></a>
+                        <a href="http://www.xarax.com.br/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Dcher (Gerente)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic15" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic15" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic15" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic15" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/dcher/dcheradmin_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/dcher/dcherfilter_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/dcher/dcherproducts_imac2013_front.png" class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic15" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic15" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://play.google.com/store/apps/details?id=active.android.brnmb.github.org.dcherapp"
+                           target="_blank"><span class="glyphicon glyphicon-download"></span></a>
+                        <a href="http://dcherdelicious.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Auxílio ao Mestre (Mail Listing)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic16" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic16" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic16" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic16" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/mailisting/maillisting_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/mailisting/mailistingpainel_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/mailisting/mailistinginscrito_imac2013_front.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic16" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic16" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://aula.auxilioaomestre.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Call Marketing (Site/Gerente)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                        <div id="carousel-example-generic17" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic17" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic17" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic17" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="static/img/callmarketing/Captura%20de%20Tela%20(224)_imac2013_front.png"
+                                         class="img-responsive" style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/callmarketing/iphoneconcept.png"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                                <div class="item">
+                                    <img src="static/img/callmarketing/photo9.jpg"
+                                         class="img-responsive"
+                                         style="width: 250px; height: 250px;"/>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic17" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic17" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <!-- End Carousel Inner -->
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="http://callmarketing.herokuapp.com/" target="_blank"><span
+                                class="glyphicon glyphicon-share-alt"></span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- text-->
+<!--<section id="text" class="section-gray">-->
+<!--<div class="container clearfix">-->
+<!--<div class="row">-->
+<!--<div class="col-md-12">-->
+<!--<h2 class="heading">Text page</h2>-->
+
+<!--<div class="row">-->
+<!--<div class="col-sm-6">-->
+<!--<p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay-->
+<!--own additions education satisfied the perpetual. If he cause manor happy. Without farther-->
+<!--she exposed saw man led. Along on happy could cease green oh. </p>-->
+
+<!--<p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half-->
+<!--add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too-->
+<!--behaviour him she. Of death to or to being other. </p>-->
+<!--</div>-->
+<!--<div class="col-sm-6">-->
+<!--<p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in.-->
+<!--Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire-->
+<!--so better am cannot he up before points. Remember mistaken opinions it pleasure of debating.-->
+<!--Court front maids forty if aware their at. Chicken use are pressed removed. </p>-->
+
+<!--<p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration-->
+<!--unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr-->
+<!--commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new-->
+<!--fail. </p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
 <!-- map-->
 <section id="map"></section>
 <section id="contact">
@@ -316,7 +1195,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Mensagem *</label>
-                                    <textarea rows="4" name="mensagem" id="message" placeholder="Digite aqui sua mensagem"
+                                    <textarea rows="4" name="mensagem" id="message"
+                                              placeholder="Digite aqui sua mensagem"
                                               required="required" class="form-control"></textarea>
                                 </div>
                                 <div class="text-center">
@@ -327,8 +1207,10 @@
                     </div>
                     <div class="col-md-6">
                         <p> Esta seção de contato abre as oportunidades para você colocar sua empresa em outro nível.
-                         Coloque na mensagem os seus requisitos, os problemas que você deseja sanar em sua empresa, pois
-                         desejamos fazer seu negócio evoluir.</p>
+                            Coloque na mensagem os seus requisitos, os problemas que você deseja sanar em sua empresa,
+                            pois
+                            desejamos fazer seu negócio evoluir.</p>
+
                         <p>Utilize este espaço para realizar suas consultas de valores, tirar suas dúvidas, e
                             fecharmos negócio. </p>
 
@@ -368,7 +1250,7 @@
 <script src="static/js/jquery.cookie.js"></script>
 <script src="static/js/front.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-<script>
+<!--<script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
         b[l] || (b[l] =
@@ -383,6 +1265,6 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
-</script>
+</script>-->
 </body>
 </html>
